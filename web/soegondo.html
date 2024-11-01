@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soegondo Djojo Puspito</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #00695c, #004d40);
+            color: #fff;
+            padding: 2rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('ornament.png'); /* Ganti dengan gambar ornamen yang diinginkan */
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.1; 
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            z-index: 2;
+            position: relative;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #e0f2f1;
+            z-index: 2;
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* Sections */
+        section {
+            padding: 2rem;
+            background-color: #e0f7fa;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        /* Tokoh Section */
+        .tokoh-section {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tokoh-section img {
+            border-radius: 8px;
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .tokoh-description {
+            max-width: 500px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #004d40;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Soegondo Djojo Puspito</h1>
+        <p>Tokoh Pendidikan dan Perjuangan Nasional Indonesia</p>
+    </header>
+
+    <!-- Tokoh Section -->
+    <section id="tokoh">
+        <div class="tokoh-section">
+            <img src="soegondo.jpeg" alt="Soegondo Djojo Puspito">
+            <div class="tokoh-description">
+                <h2>Soegondo Djojo Puspito</h2>
+                <p>Soegondo Djojo Puspito lahir pada 26 September 1902, di Kebumen, Jawa Tengah. Ia dikenal sebagai seorang tokoh pendidikan, sastrawan, dan salah satu pelopor organisasi pemuda Indonesia. Sebagai seorang yang terdidik, Soegondo memiliki peran penting dalam upaya memajukan pendidikan di Indonesia pada masa penjajahan.</p>
+                <p>Ia merupakan pendiri organisasi kepemudaan yang dikenal dengan nama Jong Java, yang berfokus pada pemberdayaan pemuda untuk memahami pentingnya nasionalisme dan pendidikan. Soegondo juga aktif dalam berbagai kegiatan sosial dan politik untuk mendorong kesadaran kolektif di kalangan masyarakat Indonesia.</p>
+                <p>Sebagai sastrawan, Soegondo menulis berbagai karya yang menggugah semangat kebangkitan nasional. Ia juga menjadi salah satu anggota dalam organisasi yang bertujuan untuk mempersiapkan kemerdekaan Indonesia. Soegondo wafat pada 5 April 1985, namun jasanya dalam dunia pendidikan dan perjuangan nasional tetap dikenang.</p>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>

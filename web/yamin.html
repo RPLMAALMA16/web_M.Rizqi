@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Yamin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #00695c, #004d40);
+            color: #fff;
+            padding: 2rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('ornament.png'); /* Ganti dengan gambar ornamen yang diinginkan */
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.1; 
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            z-index: 2;
+            position: relative;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #e0f2f1;
+            z-index: 2;
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* Sections */
+        section {
+            padding: 2rem;
+            background-color: #e0f7fa;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        /* Tokoh Section */
+        .tokoh-section {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tokoh-section img {
+            border-radius: 8px;
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .tokoh-description {
+            max-width: 500px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #004d40;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Mohammad Yamin</h1>
+        <p>Tokoh Kebangkitan Nasional dan Penulis Terkenal Indonesia</p>
+    </header>
+
+    <!-- Tokoh Section -->
+    <section id="tokoh">
+        <div class="tokoh-section">
+            <img src="mohammad_yamin.jpg" alt="Mohammad Yamin">
+            <div class="tokoh-description">
+                <h2>Mohammad Yamin</h2>
+                <p>Mohammad Yamin lahir pada 23 Agustus 1903 di Sumatran, Indonesia. Ia dikenal sebagai seorang tokoh pergerakan nasional, sastrawan, dan penulis yang memiliki pengaruh besar dalam sejarah Indonesia. Yamin adalah salah satu pendiri Partai Indonesia, yang berjuang untuk kemerdekaan Indonesia dari penjajahan Belanda.</p>
+                <p>Selain aktif dalam politik, Yamin juga dikenal sebagai seorang sastrawan yang produktif. Karya-karyanya mencakup puisi, prosa, dan esai yang menggugah semangat kebangkitan nasional. Ia juga menulis banyak artikel yang mendorong kesadaran masyarakat tentang pentingnya perjuangan untuk meraih kemerdekaan.</p>
+                <p>Mohammad Yamin adalah salah satu penggagas Sumpah Pemuda pada tahun 1928, yang menjadi tonggak sejarah bagi persatuan dan kesatuan bangsa Indonesia. Ia juga menjabat sebagai Menteri Pendidikan dan Kebudayaan dalam kabinet pertama Indonesia. Yamin wafat pada 17 Oktober 1962, namun jasa dan pengaruhnya dalam perjuangan kemerdekaan dan kebangkitan nasional tetap dikenang hingga saat ini.</p>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>

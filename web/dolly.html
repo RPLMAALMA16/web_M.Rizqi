@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolly Salim</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #00695c, #004d40);
+            color: #fff;
+            padding: 2rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('ornament.png'); /* Ganti dengan gambar ornamen yang diinginkan */
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.1; 
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            z-index: 2;
+            position: relative;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #e0f2f1;
+            z-index: 2;
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* Sections */
+        section {
+            padding: 2rem;
+            background-color: #e0f7fa;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        /* Tokoh Section */
+        .tokoh-section {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tokoh-section img {
+            border-radius: 8px;
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .tokoh-description {
+            max-width: 500px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #004d40;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Dolly Salim</h1>
+        <p>Tokoh Kebangkitan Perempuan dan Pendidikan Indonesia</p>
+    </header>
+
+    <!-- Tokoh Section -->
+    <section id="tokoh">
+        <div class="tokoh-section">
+            <img src="dolly.jpg" alt="Dolly Salim">
+            <div class="tokoh-description">
+                <h2>Dolly Salim</h2>
+                <p>Dolly Salim lahir pada 5 Desember 1947, di Jakarta, Indonesia. Ia dikenal sebagai seorang aktivis perempuan, pendidik, dan penulis yang berperan penting dalam memperjuangkan hak-hak perempuan dan pendidikan di Indonesia. Dolly terlibat aktif dalam berbagai organisasi yang fokus pada pemberdayaan perempuan dan anak-anak.</p>
+                <p>Selama karirnya, Dolly banyak berkontribusi dalam pengembangan kurikulum pendidikan yang inklusif, serta mendukung program-program pelatihan bagi guru dan tenaga pendidik lainnya. Ia juga aktif dalam kampanye kesetaraan gender, yang bertujuan untuk meningkatkan akses perempuan terhadap pendidikan dan kesempatan kerja.</p>
+                <p>Melalui tulisan dan pengabdiannya, Dolly Salim telah menginspirasi banyak orang untuk memperjuangkan keadilan dan kesetaraan di masyarakat. Hingga saat ini, ia terus berjuang untuk menciptakan dunia yang lebih baik bagi generasi mendatang, terutama bagi perempuan dan anak-anak.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    
+</body>
+</html>

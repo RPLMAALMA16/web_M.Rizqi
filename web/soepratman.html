@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendiri Lagu Kebangsaan Indonesia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #00695c, #004d40);
+            color: #fff;
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('ornament.png'); /* Letakkan gambar ornamen yang ingin digunakan */
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.1; /* Mengurangi opacity agar tetap elegan */
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            z-index: 2;
+            position: relative;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #e0f2f1;
+            z-index: 2;
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* Sections */
+        section {
+            padding: 2rem;
+            background-color: #e0f7fa;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        /* Tokoh Section */
+        .tokoh-section {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tokoh-section img {
+            border-radius: 8px;
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .tokoh-description {
+            max-width: 500px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #004d40;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>W.R. Soepratman</h1>
+        <p>Komposer Lagu Kebangsaan Indonesia Raya dan Perjuangannya</p>
+    </header>
+
+    <!-- Tokoh Section -->
+    <section id="tokoh">
+        <div class="tokoh-section">
+            <img src="Wr-Soepratman.jpg" alt="W.R. Soepratman">
+            <div class="tokoh-description">
+                <h2>W.R. Soepratman</h2>
+                <p>Wage Rudolf Soepratman lahir di Purworejo pada tanggal 19 Maret 1903. Sejak kecil, ia menunjukkan minat besar terhadap musik, terutama melalui pengaruh dari keluarganya. Kemampuan musiknya semakin berkembang ketika ia pindah ke Makassar dan belajar bermain biola.</p>
+                <p>Setelah kembali ke Pulau Jawa, W.R. Soepratman aktif sebagai jurnalis yang berpikiran nasionalis. Kecintaannya pada tanah air dan semangat kemerdekaan mendorongnya untuk menciptakan lagu "Indonesia Raya". Lagu ini pertama kali diperdengarkan pada Kongres Pemuda II di Jakarta pada tahun 1928, yang kemudian menjadi tonggak penting kebangkitan nasional Indonesia.</p>
+                <p>Meski mengalami kesulitan dan tekanan dari pemerintah kolonial, semangat juang W.R. Soepratman tidak surut. "Indonesia Raya" kemudian diakui sebagai lagu kebangsaan Republik Indonesia. W.R. Soepratman wafat pada 17 Agustus 1938, namun jasanya sebagai simbol perjuangan kemerdekaan Indonesia tetap dikenang hingga kini.</p>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>

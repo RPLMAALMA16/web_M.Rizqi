@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #e0f7fa, #80deea);
+}
+
+header {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0px 20px;
+    background-image: url(banner.jpg);
+    background-size: cover;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* hitam transparan */
+}
+.header-content {
+    display: flex;
+    flex-direction: column; /* Memastikan konten teratur secara vertikal */
+    align-items: center;    /* Menyelaraskan konten di tengah secara horizontal */
+    justify-content: center; /* Menyelaraskan konten di tengah secara vertikal */
+    position: relative;      /* Memastikan posisi relatif untuk elemen di dalamnya */
+    z-index: 2;             /* Agar teks terlihat di atas latar belakang */
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.header-content h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+ 
+}
+
+.header-content h2 {
+    font-size: 1.5em;
+    margin: 10px 0 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #ffc107;
+    color: #333;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background: #e0a800;
+    transform: translateY(-2px); /* Efek mengangkat tombol saat hover */
+}
+
+/* tentang sekolah */
+#tentang-sumpah {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+#tentang-sumpah h3 {
+    font-size: 2.5rem;
+    color: #004d40;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#tentang-sumpah h3::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: #00796b;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.text-content {
+    width: 50%; 
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+    text-align: left;
+    animation: fadeInUp 1.5s forwards;
+}
+
+/* Animasi fade-in dari bawah */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 90%;
+    width: 100%;
+}
+
+.program-pendidikan {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 25px;
+    max-width: 90%;
+    position: relative;
+}
+
+.card-slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.card {
+
+    margin: 0 15px; 
+    padding: 25px; 
+    background-color: #FAF3E0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.slider-btn {
+    background: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background 0.3s;
+}
+
+.card-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    color: #00796b;
+    font-size: 3em;
+}
+
+.testimonials {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(240, 240, 240, 0.9);
+    border-radius: 15px;
+}
+
+.testimonials h4 {
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+.slider-btn:hover {
+    background: #004d40;
+}
+
+h3 {
+    color: #004d40;
+    margin-bottom: 20px;
+}
+.card button {
+    margin-top: 10px; /* Jarak antara teks dan tombol */
+    padding: 10px 15px; /* Padding untuk tombol */
+    background-color: #00796b; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border */
+    border-radius: 5px; /* Sudut melengkung */
+    cursor: pointer; /* Kursor berubah saat hover */
+    transition: background 0.3s; /* Efek transisi saat hover */
+}
+
+.card button:hover {
+    background-color: #004d40; /* Warna latar belakang saat hover */
+}
+
+
+
+/* Tabel */
+#prestasi {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 90%;
+    text-align: center;
+}
+
+.prestasi-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1em;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    background: #fff;
+}
+
+.prestasi-table thead {
+    background: #00796b;
+    color: #fff;
+}
+
+.prestasi-table th,
+.prestasi-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+}
+
+.prestasi-table th {
+    font-weight: bold;
+}
+
+.prestasi-table tbody tr {
+    transition: background 0.3s;
+}
+
+.prestasi-table tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.prestasi-table tbody tr:hover {
+    background: #d0efeb;
+}
+
+
+
+/* Menu navigasi */
+.nav {
+    display: none; /* Tersembunyi secara default */
+    flex-direction: column;
+    background: #00796b;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.nav ul li a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.nav-toggle {
+    cursor: pointer;
+    font-size: 24px;
+    color: #ffc107;
+    display: none; /* Tersembunyi pada layar besar */
+}
+
+/* Media Query untuk Responsivitas */
+@media (max-width: 768px) {
+    header {
+        padding: 50px 10px;
+    }
+
+    .header-content h1 {
+        font-size: 2.2em;
+    }
+
+    .header-content h2 {
+        font-size: 1.2em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+    }
+
+    .card-slider {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        min-width: 90%;
+        margin-bottom: 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .fasilitas-container {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .nav {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 30px 5px;
+    }
+
+    .header-content h1 {
+        font-size: 1.8em;
+    }
+
+    .header-content h2 {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        padding: 8px 15px;
+    }
+
+    .card {
+        min-width: 100%;
+    }
+
+    .fasilitas-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .slider-btn {
+        padding: 8px 12px;
+    }
+}
+
+/* CSS tokoh */
+.tokoh-list {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap; 
+    text-align: center;
+    padding-left: 80px;
+}
+
+.tokoh-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Menyelaraskan elemen di tengah */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    width: 220px;
+    box-shadow: 0 2px 5px rgba(165, 84, 84, 0.877);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tokoh-photo {
+    width: 100px; /* Sesuaikan ukuran foto */
+    height: 100px; /* Sesuaikan ukuran foto */
+    border-radius: 40%; /* Membuat foto bulat */
+    object-fit: cover; /* Memastikan foto tetap proporsional */
+    margin-bottom: 10px; /* Jarak antara foto dan teks */
+}
+
+.tokoh-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+h3 {
+    color: #004d40;
+    margin-bottom: 20px;
+}
+.table {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.table {
+    max-width: 1000px; /* Lebar maksimal lebih lebar */
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.856);
+    width: 700p;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%; /* Mengatur tabel agar menggunakan 100% dari lebar kontainer */
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px; /* Padding lebih besar untuk ruang lebih */
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+

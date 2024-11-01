@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendiri Budi Utomo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #00695c, #004d40);
+            color: #fff;
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('ornament.png'); /* Letakkan gambar ornamen yang ingin digunakan */
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.1; /* Mengurangi opacity agar tetap elegan */
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            z-index: 2;
+            position: relative;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #e0f2f1;
+            z-index: 2;
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* Sections */
+        section {
+            padding: 2rem;
+            background-color: #e0f7fa;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        /* Tokoh Section */
+        .tokoh-section {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tokoh-section img {
+            border-radius: 8px;
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .tokoh-description {
+            max-width: 500px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #004d40;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Dr. Soetomo</h1>
+        <p>Menelusuri Jejak Pendiri dan Sejarah Pergerakan Nasional Indonesia</p>
+    </header>
+
+    <!-- Tokoh Section -->
+    <section id="tokoh">
+        <div class="tokoh-section">
+            <img src="Soepomo.jpg" alt="Dr. Soetomo">
+            <div class="tokoh-description">
+                <h2>Dr. Soetomo</h2>
+                <p>Dr. Soetomo, yang memiliki nama asli Soebroto, lahir di Nganjuk pada 30 Juli 1888. Dia dikenal sebagai salah satu pelopor kebangkitan nasional Indonesia. Dr. Soetomo memulai pendidikannya di STOVIA (School tot Opleiding van Inlandsche Artsen) atau sekolah kedokteran di Batavia, tempat ia bertemu dengan para pelajar yang memiliki gagasan nasionalis.</p>
+                <p>Pada tahun 1908, Soetomo bersama kawan-kawannya mendirikan Budi Utomo, organisasi yang bertujuan untuk memajukan pendidikan dan kesejahteraan bangsa Indonesia, yang pada saat itu masih dijajah Belanda. Organisasi ini kemudian berkembang menjadi gerakan yang memicu kesadaran nasional di kalangan rakyat Indonesia, yang akhirnya menjadi landasan perjuangan kemerdekaan Indonesia.</p>
+                <p>Setelah lulus dari STOVIA, Dr. Soetomo melanjutkan perjuangannya sebagai dokter di berbagai daerah. Beliau berusaha meningkatkan kesehatan masyarakat dan menyebarkan gagasan kebangsaan. Dr. Soetomo wafat pada 30 Mei 1938, namun jasa dan semangat perjuangannya terus dikenang sebagai bagian penting dari sejarah kebangkitan nasional Indonesia.</p>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>

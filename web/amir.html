@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amir Sjarifuddin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #00695c, #004d40);
+            color: #fff;
+            padding: 2rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('ornament.png'); /* Letakkan gambar ornamen yang ingin digunakan */
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.1; 
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            z-index: 2;
+            position: relative;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #e0f2f1;
+            z-index: 2;
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* Sections */
+        section {
+            padding: 2rem;
+            background-color: #e0f7fa;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        /* Tokoh Section */
+        .tokoh-section {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .tokoh-section img {
+            border-radius: 8px;
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .tokoh-description {
+            max-width: 500px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #004d40;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Amir Sjarifuddin</h1>
+        <p>Seorang Tokoh Penting dalam Sejarah Pergerakan Nasional Indonesia</p>
+    </header>
+
+    <!-- Tokoh Section -->
+    <section id="tokoh">
+        <div class="tokoh-section">
+            <img src="amir.jpeg" alt="Amir Sjarifuddin">
+            <div class="tokoh-description">
+                <h2>Amir Sjarifuddin Harahap</h2>
+                <p>Amir Sjarifuddin Harahap lahir pada 27 April 1907 di Medan, Sumatera Utara. Ia merupakan salah satu tokoh perjuangan kemerdekaan Indonesia yang memiliki peran penting dalam pergerakan nasional dan politik Indonesia. Sebagai seorang pemimpin, Amir Sjarifuddin dikenal sebagai sosok yang teguh pada prinsipnya dan berjuang untuk keadilan sosial serta kemerdekaan bangsa Indonesia.</p>
+                <p>Amir Sjarifuddin aktif dalam pergerakan nasional sejak muda, dan ia memiliki pandangan sosial yang progresif. Setelah Indonesia merdeka, Amir menjabat sebagai Perdana Menteri dan Menteri Pertahanan, di mana ia berperan penting dalam mempertahankan kemerdekaan Indonesia dari ancaman kolonialisme Belanda. Namun, pada akhirnya ia ditangkap dan dihukum mati pada 1948 karena tuduhan terlibat dalam gerakan komunis, yang saat itu menjadi kontroversi dalam sejarah politik Indonesia.</p>
+                <p>Perjuangan dan dedikasinya dalam memperjuangkan keadilan sosial tetap dikenang sebagai salah satu tokoh penting dalam sejarah bangsa Indonesia. Meski perjalanan hidupnya berakhir tragis, Amir Sjarifuddin dikenang sebagai tokoh yang berani dan setia pada prinsip perjuangannya.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
